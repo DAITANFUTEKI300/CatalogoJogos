@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>D:\T.I\ApiCatalogoJogos-master\ExemploApiCatalogoJogos\Controllers\V1\JogosController.cs
+    <RootNamespace>Criando_um_catálogo_de_jogos</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\T.I\Criando um catálogo de jogos\Criando um catálogo de jogos\Criando um catálogo de jogos.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\NovaPasta1\**" />
+    <Compile Remove="Controllers\NovaPasta\**" />
+    <Content Remove="Controllers\NovaPasta1\**" />
+    <Content Remove="Controllers\NovaPasta\**" />
+    <EmbeddedResource Remove="Controllers\NovaPasta1\**" />
+    <EmbeddedResource Remove="Controllers\NovaPasta\**" />
+    <None Remove="Controllers\NovaPasta1\**" />
+    <None Remove="Controllers\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
+</Project>
